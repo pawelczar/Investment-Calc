@@ -12,10 +12,8 @@ export default function Result() {
                     </tr>
                 </thead>
                 <tbody>
-
                 </tbody>
             </table>
-
         </div>
     )
 }
