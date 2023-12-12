@@ -1,4 +1,4 @@
-export default function Result() {
+export default function Result({ result }) {
     return (
         <div  >
             <table id="result" className="center">
