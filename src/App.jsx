@@ -10,13 +10,14 @@ import { formatter } from "./util/investment.js"
 //   expectedReturn,
 //   duration
 
+
 function App() {
 
   return (
     <>
       <Header />
       <InputsSection />
-      <Result />
+      <Result result={data} />
     </>
   )
 }

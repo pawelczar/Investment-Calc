@@ -1,4 +1,9 @@
 export default function Result({ result }) {
+
+    let data = []
+    if (result) {
+        data = result.map(row => <tr><td>{row.year}</td><td>{row.interest}</td><td>{row.valueEndOfYear}</td><td>{row.annualInvestment}</td></tr>)
+    }
     return (
         <div  >
             <table id="result" className="center">
@@ -12,6 +17,7 @@ export default function Result({ result }) {
                     </tr>
                 </thead>
                 <tbody>
+                    {data}
                 </tbody>
             </table>
         </div>
